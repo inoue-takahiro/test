@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>管理画面</title>
+	<title>管理画面2</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/responsive.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
@@ -46,8 +46,6 @@
 					<li><a href="profile.html"><i class="fa fa-user" aria-hidden="true"></i>プロフィール変更</a></li>
 					<li><a href="#"><i class="fa fa-external-link" aria-hidden="true"></i>ホームページへ</a></li>
 					<li><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i>ログアウト</a></li>
-					<li><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i>ログアウト</a></li>
-					<li><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i>ログアウト</a></li>
 				</ul>
 			</div>
 		</div>
@@ -66,90 +64,81 @@
 			</ul>
 		</div>
 		<div class="main">
-			<div class="contents-wrapper post-edit">
+			<div class="contents-wrapper profile">
 				<div class="container">
-					<h1>新規投稿</h1>
-
+					<h1>プロフィール変更</h1>
 					<form action="">
 						<table>
 						<tbody>
 							<tr>
-								<th>記事タイトル<span class="req">必須</span></th>
+								<th>メールアドレス<span class="req">必須</span></th>
 								<td>
-									<input placeholder="" name="" value="" type="text" id="" />
+									<ul class="inputUl">
+									<li>
+										<input placeholder="メールアドレス" name="_mailadress" value="" type="mail" id="__mailadress" />	</li>
+									<li><p>確認のためもう一度アドレスを入力してください。</p>
+										<input name="_mailadress_confirm" value="" type="mail" id="__mailadress_confirm" /></li>
+									</ul>
 								</td>
 							</tr>
 							<tr>
-								<th>カテゴリー<span class="req">必須</span></th>
+								<th>パスワード変更<span>任意</span></th>
 								<td>
-									<select name="" id="">
-										<option value="">カテゴリを選択してください</option>
-										<option value="1">ファッション (ID:1)</option>
-									</select>
+									<ul class="inputUl">
+									<li>
+										<input placeholder="password（半角英数）" name="_password" value="" type="password" id="__password" />	</li>
+									<li><p>確認のためもう一度パスワードを入力してください。</p>
+										<input name="_password_confirm" value="" type="password" id="__password_confirm" /></li>
+									</ul>
 								</td>
 							</tr>
 							<tr>
-								<th>タグ<span>任意</span></th>
+								<th>サイト上での表示名<span class="req">必須</span></th>
 								<td>
-									<input placeholder="イタリアン,パスタ" name="" value="" type="text" id="" />
-									<p>※複数のタグを入力する場合、半角のカンマで区切って入力して下さい。</p>
+									<input placeholder="例) ホリスティック" name="_display_name" value="TAKAHIRO" type="text" id="__display_name" />
 								</td>
 							</tr>
 							<tr>
-								<th>冒頭説明分<span class="req">必須</span></th>
+								<th>サイト上でのプロフィール<span>任意</span></th>
 								<td>
-									<textarea name="_description" id=""></textarea>
+									<textarea name="_description" id="__description">ライターテスト登録　プロフィール記入部分</textarea>
 								</td>
 							</tr>
 							<tr>
-								<th>アイキャッチ画像<span class="req">必須</span></th>
+								<th>サイト上での写真<span>任意</span></th>
 								<td>
 									<span class="phoLink"><a href="#" onclick="jQuery('#avatarFile').click(); return false;">画像をアップロード</a></span>
-									<p>※画像サイズは、横：800px 縦：500px 以上推奨</p>
+									<p>※画像サイズは、横：250px 縦：240px 以上推奨</p>
 									<input type="file" name="_avatar" id="avatarFile" style="display: none;" onchange="jQuery('#avatarFileUrl').val(jQuery(this).val());">
-									<div class="fileName"><input type="text" id="" readonly></div>
+									<div class="fileName"><input type="text" id="avatarFileUrl" readonly></div>
+									<input name="_avatar_file" value="" type="hidden" id="__avatar_file" /><input name="_avatar_url" value="" type="hidden" id="__avatar_url" /><div class="fileName"><img src="img/profile.jpg" width="200" /></div>
 								</td>
 							</tr>
 							<tr>
-								<th>コンテンツ<span class="req">必須</span></th>
+								<th>twitterURL<span>任意</span></th>
 								<td>
-									<div class="member-editable-content-list"></div>
-									<div class="member-editable-content-action">
-										<div class="member-editable-content-select">
-											<select>
-												<option value="">パーツ名を選択</option>
-												<option value="catch_1">大見出し</option>
-												<option value="catch_2">中見出し</option>
-												<option value="catch_3">小見出し</option>
-												<option value="image">画像</option>
-												<option value="getty">GettyImages</option>
-												<option value="text">テキスト</option>
-												<option value="image_with_text">画像＋テキスト</option>
-												<option value="quote">引用テキスト</option>
-												<option value="youtube">Youtube動画</option>
-												<option value="twitter">Twitter投稿</option>
-												<option value="pintarest">Pintarest（ピン）</option>
-												<option value="instagram">Instagram</option>
-											</select>
-										</div>
-										<input type="button" value="追加" class="member-editable-content-import">
-									</div>
+									<input name="_twitter" value="https://twitter.com/H2O_INC" type="text" id="__twitter" />
+								</td>
+							</tr>
+							<tr>
+								<th>FacebookURL<span>任意</span></th>
+								<td>
+									<input name="_facebook" value="https://www.facebook.com/h20inc/" type="text" id="__facebook" />
+								</td>
+							</tr>
+							<tr>
+								<th>ブログURL<span>任意</span></th>
+								<td>
+									<input name="_blog" value="http://h2o-inc.jp" type="text" id="__blog" />
 								</td>
 							</tr>
 						</tbody>
 						</table>
 						<ul class="submit">
 							<li>
-								<input type="submit" name="do_submit" value="レビュー待ち">
+								<input type="submit" name="do_submit" value="更新する">
 							</li>
-							<li>
-								<input type="submit" name="do_draft" value="下書き保存">
-							</li>
-							<li>
-								<input type="submit" name="do_preview" value="プレビュー">
-							</li>
-							</ul>
-							<div class="clear"></div>
+						</ul>
 					</form>
 				</div>
 			</div>
