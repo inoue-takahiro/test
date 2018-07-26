@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>管理画面</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js?ver=3.8.1"></script>
+
+	<script type='text/javascript'>
+	$(function(){
+		$("#toggle").click(function(){
+			$("#menu").slideToggle();
+			return false;
+		});
+		$(window).resize(function(){
+			var win = $(window).width();
+			var p = 480;
+			if(win > p){
+				$("#menu").show();
+			}
+		});
+	});
+	</script>
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<div class="header-left"><a href="index.html">SiteTitle MANAGEMENT SCREEN</a></div>
+			<div class="header-right">
+				<img src="img/profile.jpg" height="583" width="583">takahiro
+				<nav>
+					<div id="toggle"><i class="fa fa-bars" aria-hidden="true"></i></div>
+				</nav>
+			</div>
+			<div id="menu">
+				<ul  class="">
+					<li><a href="index.html"><i class="fa fa-desktop" aria-hidden="true"></i>Dashboard</a></li>
+					<li><a href="post-list.html"><i class="fa fa-files-o" aria-hidden="true"></i>投稿記事一覧</a></li>
+					<li><a href="post-edit.html"><i class="fa fa-pencil" aria-hidden="true"></i>新規投稿</a></li>
+					<li><a href="analytics.html"><i class="fa fa-bar-chart" aria-hidden="true"></i>アクセス統計</a></li>
+					<li><a href="news.html"><i class="fa fa-info-circle" aria-hidden="true"></i>お知らせ</a></li>
+					<li><a href="profile.html"><i class="fa fa-user" aria-hidden="true"></i>プロフィール変更</a></li>
+					<li><a href="#"><i class="fa fa-external-link" aria-hidden="true"></i>ホームページへ</a></li>
+					<li><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i>ログアウト</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<div class="main-wrapper">
+		<div class="sidebar">
+			<ul class="side-menu">
+				<a href="index.html"><li><i class="fa fa-desktop" aria-hidden="true"></i>Dashboard</li></a>
+				<a href="post-list.html"><li><i class="fa fa-files-o" aria-hidden="true"></i>投稿記事一覧</li></a>
+				<a href="post-edit.html"><li><i class="fa fa-pencil" aria-hidden="true"></i>新規投稿</li></a>
+				<a href="analytics.html"><li><i class="fa fa-bar-chart" aria-hidden="true"></i>アクセス統計</li></a>
+				<a href="news.html"><li><i class="fa fa-info-circle" aria-hidden="true"></i>お知らせ</li></a>
+				<a href="profile.html"><li><i class="fa fa-user" aria-hidden="true"></i>プロフィール変更</li></a>
+				<a href="#"><li><i class="fa fa-external-link" aria-hidden="true"></i>ホームページへ</li></a>
+				<a href="#"><li><i class="fa fa-sign-out" aria-hidden="true"></i>ログアウト</li></a>
+			</ul>
+		</div>
+		<div class="main">
+			<div class="contents-wrapper page">
+				<div class="container">
+					<h1>編集部からのお知らせ</h1>
+					<a href="news.html" class="back">←お知らせ一覧に戻る</a>
+					<h2>お知らせタイトルあああああああああああ</h2>
+					<p class="date">2017/03/30</p>
+					<div class="main-contents">
+						<p>お知らせの内容を表記あああああああああああああああああああ</p>
+						<p>お知らせの内容を表記あああああああああああああああああああ</p>
+						<p>お知らせの内容を表記あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ<a href="#">リンク</a>ああああああああああああああああああああああああああああああああああああああああああああああああ</p>
+						<img src="img/profile.jpg" height="300" width="300" alt="">
+						<h3>小見出し</h3>
+						<p>お知らせの内容を表記あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ<a href="#">リンク</a>ああああああああああああああああああああああああああああああああああああああああああああああああ</p>
+						<p>あああああああああああああああああああああああああ</p>
+						<ul>
+						<li>リスト１</li>
+						<li>リスト２</li>
+						<li>リスト３</li>
+						</ul>
+						<ol>
+						<li>リスト１</li>
+						<li>リスト２</li>
+						<li>リスト３</li>
+						</ol>
+						<p>&nbsp;</p>
+						<p>あああああああああああああああああああああああああああ</p>
+						<h3>小見出し</h3>
+						<p>表の確認</p>
+						<table>
+						<tbody>
+						<tr>
+						<th>ああああああ</th>
+						<th>ああああああ</th>
+						<th>ああああああ</th>
+						<th>ああああああ</th>
+						<th>ああああああ</th>
+						</tr>
+						<tr>
+						<td>あああ</td>
+						<td>あああ</td>
+						<td>あああ</td>
+						<td>あああ</td>
+						<td>あああ</td>
+						</tr>
+						<tr>
+						<td>あああ</td>
+						<td>あああ</td>
+						<td>あああ</td>
+						<td>あああ</td>
+						<td>あああ</td>
+						</tr>
+						</tbody>
+						</table>
+						<blockquote>
+						<p>引用</p>
+						<p>ああああああああああああああああああああああああああああああ</p>
+						<p>ああああああああああああああああああああああああああああああ</p>
+						</blockquote>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="container"></div>
+	</footer>
+</body>
+</html>

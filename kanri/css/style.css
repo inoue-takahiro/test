@@ -1,0 +1,669 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*------------------------------------------------------------
+	デフォルトスタイル
+    ------------------------------------------------------------*/
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, font, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td {
+       margin: 0;
+       padding: 0;
+       background: transparent;
+       border: 0;
+       outline: 0;
+       font-size: 1em;
+   }
+
+   body {
+       font-size: 1em;
+   }
+
+   body,
+   table,
+   input, textarea, select, option {
+       font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+   }
+
+   ol, ul {
+       list-style: none;
+   }
+
+   blockquote, q {
+       quotes: none;
+   }
+
+   :focus {
+       outline: 0;
+   }
+
+   ins {
+       text-decoration: none;
+   }
+
+   del {
+       text-decoration: line-through;
+   }
+
+   a:link {
+       color: #333;
+       text-decoration: none;
+   }
+
+   a:visited {
+       color: #333;
+       text-decoration: none;
+   }
+
+   a:hover {
+       color: #333;
+       text-decoration: underline;
+   }
+
+   a:active {
+       color: #333;
+       text-decoration: underline;
+   }
+
+   /*デフォルトここまで*/
+
+   * {
+      box-sizing: border-box;
+  }
+
+  body {
+      margin: 0;
+      font-family: "Hiragino Kaku Gothic ProN", sans-serif;
+      color:#333;
+      background-color: #1d2127;
+  }
+
+  a {
+      text-decoration: none;
+  }
+
+  .clear {
+      clear: left;
+  }
+
+  .container {
+      /*max-width: 1170px;*/
+      width: 100%;
+      /*padding: 0px 15px;*/
+      margin: 0 auto;
+  }
+
+  header{
+   height:40px;
+   background-color: #1d2127;
+}
+
+header nav{
+	display:none;
+}
+
+header .header-left a{
+	background-color: #1caf9a;
+	color:#fff;
+	font-size:20px;
+	font-weight: 600;
+	float: left;
+	height:40px;
+	line-height:40px;
+	padding:0 20px;
+}
+
+header .header-left a:hover{
+	text-decoration: none;
+}
+
+header .header-right{
+	float: right;
+	font-size:12px;
+	color:#fff;
+	padding-right: 20px;
+	line-height: 40px;
+}
+
+header .header-right img{
+	width:24px;
+	height:24px;
+	border-radius: 12px;
+	margin-right: 10px;
+	margin-top:8px;
+	float:left;
+}
+
+#menu{
+    display: none;
+}
+
+.main-wrapper{
+	overflow:hidden;
+}
+
+.sidebar{
+	width:220px;
+	background-color: #1d2127;
+	min-height: 600px;
+	position: absolute;
+}
+
+.sidebar .side-menu li{
+	color:#8b91a0;
+	padding:10px 10px;
+	font-size:12px;
+	font-weight: 400;
+	border-bottom: 1px solid #17191e;
+	transition: all .3s;
+	cursor: pointer;
+}
+
+.sidebar .side-menu li:hover{
+	color:#fff;
+	background-color: #262a33;
+}
+
+.sidebar .side-menu a:hover{
+	text-decoration: none;
+}
+
+.sidebar .fa{
+	margin-right: 5px;
+	width:18px;
+}
+
+.main{
+	background-color: #f5f5f5;
+	display:block;
+	margin-left:220px;
+	min-height: 800px;
+	box-sizing: border-box;
+	padding:20px;
+}
+
+.contents-wrapper h1{
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.contents-wrapper .info-boxes{
+	margin-top: 20px;
+}
+
+.contents-wrapper .info-box{
+	width:30%;
+	padding:10px;
+	background-color: #1caf9a;
+	color:#fff;
+	display: inline-block;
+	margin-bottom: 20px;
+	margin-right: 20px;
+	box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
+}
+
+.contents-wrapper .info-box .fa{
+	font-size: 60px;
+	float:left;
+	margin-right: 20px;
+}
+
+.contents-wrapper .info-box .title{
+	font-size: 12px;
+}
+
+.contents-wrapper .info-box .count{
+	font-size: 32px;
+	float:right;
+}
+
+/*form ここから*/
+form{
+  margin-top: 20px;
+  background-color: #fff;
+  text-align: left;
+  padding:20px;
+}
+
+
+form th{
+  width:40%;
+  font-size: 12px;
+  vertical-align: top;
+}
+
+form th span{
+  margin-left: 5px;
+    padding-bottom: 1px;
+    min-width: 37px;
+    display: inline-block;
+    color: #fff;
+    font-size: 11px;
+    text-align: center;
+    line-height: 1.5;
+    vertical-align: middle;
+    background-color: #8b91a0;
+}
+
+form th .req{
+  background-color: #E04B4A;
+}
+
+form td{
+  padding: 0 0 30px 0;
+}
+
+form td p{
+  font-size:12px;
+  padding:8px 0 4px 0;
+}
+
+form td .phoLink a{
+    padding: 12px 0 12px;
+    width: 180px;
+    display: inline-block;
+    cursor: pointer;
+    color: #8b91a0;
+    font-size: 12px;
+    font-weight: 300;
+    text-align: center;
+    border: 1px solid #8b91a0;
+    background-color: #1d2127;
+    transition: all .3s;
+}
+
+form td .phoLink a:hover{
+    background-color: #262a33;
+    color: #fff;
+    text-decoration: none;
+}
+
+form input[type="text"] {
+    padding-left: 10px;
+    width: 384px;
+    height: 26px;
+    color: #333;
+    /*font-size: 13px;*/
+    /* font-weight: bold; */
+    line-height: 26px;
+    border: 1px solid #616161;
+}
+
+form textarea {
+    width: 384px;
+    height: 100px;
+    color: #333;
+    /*font-size: 13px;*/
+    box-sizing: border-box;
+    padding: 8px 10px;
+    border: 1px solid #616161;
+}
+
+form .submit {
+    /*margin-left: 35%;*/
+    margin-top:20px;
+    /*text-align: center;*/
+}
+
+form .submit li input {
+    padding: 12px 0 12px;
+    width: 180px;
+    display: inline-block;
+    cursor: pointer;
+    color: #8b91a0;
+    font-size: 12px;
+    font-weight: 300;
+    text-align: center;
+    border: 1px solid #8b91a0;
+    background-color: #1d2127;
+    transition: all .3s;
+    /*post-editのみ*/
+    /*float:left;*/
+    /*margin-right: 10px;*/
+}
+
+form .submit li input:hover{
+    background-color: #262a33;
+    color: #fff;
+}
+
+form td img{
+  margin-top: 20px;
+}
+
+form input[type="text"], form input[type="password"], form input[type="mail"] {
+    padding-left: 10px;
+    width: 384px;
+    height: 26px;
+    color: #333;
+    /*font-size: 13px;*/
+    /* font-weight: bold; */
+    line-height: 26px;
+    border: 1px solid #616161;
+}
+
+/*post-list ここから*/
+
+.main-wrapper .table-list{
+	background-color: #fff;
+	margin-top: 20px;
+	box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
+	width:100%;
+	text-align: left;
+	border-collapse: collapse;
+}
+
+.main-wrapper .table-list th{
+	background: #17191e;
+	padding: 10px 10px;
+	font-size:12px;
+	font-weight: 400;
+}
+
+.main-wrapper .table-list th a{
+	display:block;
+	color:#fff;
+	line-height: 30px;
+	width:100%;
+}
+
+.main-wrapper .table-list th:hover{
+	background-color: #262a33;
+}
+
+.main-wrapper .table-list th .fa{
+	padding-left: 8px;
+}
+
+.post-list table .th1{
+	width: 55%;
+}
+
+.post-list table .th2{
+	width: 25%;
+}
+
+.post-list table .th3{
+	width: 20%;
+}
+
+.main-wrapper .table-list tbody tr {
+	border-top: 1px #ddd solid;
+}
+
+.main-wrapper .table-list td{
+	padding: 8px 10px;
+	font-size:14px;
+	font-weight: 400;
+}
+
+.main-wrapper .table-list td a{
+	display:block;
+	line-height: 24px;
+	width:100%;
+}
+
+.pagenavi{
+	margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.pagenavi span, .pagenavi a{
+	display: inline-block;
+    vertical-align: middle;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+    text-align: center;
+    line-height: 20px;
+    margin-right: 4px;
+    font-size: 12px;
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
+}
+
+.pagenavi span{
+	background-color: #1d2127;
+	color:#8b91a0;
+}
+
+.pagenavi a:hover{
+	background-color: #1d2127;
+	color:#8b91a0;
+}
+
+
+/*analytics ここから*/
+
+.analytics table .th1{
+	width: 50%;
+}
+
+.analytics table .th2{
+	width: 20%;
+}
+
+.analytics table .th3{
+	width: 15%;
+}
+
+.analytics select, .post-edit select{
+	margin-top: 20px;
+	width: 200px;
+	padding: 10px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	border: 1px solid #999;
+	background: #eee;
+	background: url(../img/arrow01.png) right 50% no-repeat, -webkit-linear-gradient(top, #fff 0%,#efebe1 100%);
+	background: url(../img/arrow01.png) right 50% no-repeat, linear-gradient(to bottom, #fff 0%,#efebe1 100%);
+	background-size: 20px, 100%;
+}
+
+/*news ここから*/
+
+.news table .th1{
+	width: 70%;
+}
+
+.news table .th2{
+	width: 30%;
+}
+
+/*post-edit ここから*/
+
+.post-edit .submit li input {
+    float:left;
+    margin-right: 10px;
+}
+
+.post-edit select{
+	margin-top: 0px;
+}
+
+.post-edit .member-editable-content-select select{
+	float:left;
+}
+
+.post-edit .member-editable-content-import{
+    padding: 10px 0 10px;
+    width: 80px;
+    display: inline-block;
+    cursor: pointer;
+    color: #8b91a0;
+    font-size: 12px;
+    font-weight: 300;
+    text-align: center;
+    border: 1px solid #8b91a0;
+    background-color: #1d2127;
+    transition: all .3s;
+    -webkit-appearance: none;
+    margin-left: 10px;
+}
+
+.post-edit .member-editable-content-import:hover{
+    background-color: #262a33;
+    color: #fff;
+}
+
+/*page ここから*/
+.page .back{
+	margin-top: 20px;
+	font-size: 12px;
+	display:inline-block;
+}
+
+.page h2{
+    color: #fff;
+    background-color: #1d2127;
+    padding:10px;
+    margin-top:20px;
+}
+
+.page .date{
+	font-size:10px;
+	padding:5px 10px;
+    background-color: #e8e8e8;
+}
+
+.page .main-contents{
+	background-color: #fff;
+	text-align: left;
+	padding:20px;
+}
+
+.page .main-contents h3{
+	padding-bottom: .5em;
+	border-bottom: 3px double #ccc;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+.page .main-contents p{
+	margin-bottom: 10px;
+	line-height: 20px;
+}
+
+.page .main-contents a{
+	color:#95b75d;
+	font-weight: 600;
+	text-decoration: underline;
+}
+
+.page .main-contents a:hover{
+	text-decoration: none;
+}
+
+.page .main-contents img{
+	margin: 10px 20px 20px 0;
+}
+
+.page .main-contents ul,.page .main-contents ol{
+	margin-bottom:20px;
+}
+
+.page .main-contents ul li{
+	padding: 0 0 2px 1.2em;
+    color: #333;
+    font-size: 15px;
+    font-weight: bold;
+    background: url(../img/icon01.png) no-repeat left 8px;
+}
+
+.page .main-contents ol {
+    counter-reset: theme-ol-counter;
+}
+
+.page .main-contents ol > li{
+	padding: 0 0 2px 2em;
+    color: #333;
+    font-size: 15px;
+    font-weight: bold;
+    position: relative;
+}
+
+.page .main-contents ol > li:before {
+    position: absolute;
+    left: 0;
+    top: 4px;
+    content: counter(theme-ol-counter);
+    counter-increment: theme-ol-counter;
+    color: #fff;
+    background: #1d2127;
+    width: 20px;
+    line-height: 20px;
+    height: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.page .main-contents table {
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+}
+
+.page .main-contents th {
+    padding: 9px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: top;
+    border: 1px solid #ccc;
+    border-bottom: 2px solid #ccc;
+    background-color: #1caf9a;;
+}
+
+.page .main-contents td {
+    padding: 13px 13px 14px;
+    color: #565656;
+    font-size: 14px;
+    text-align: center;
+    background: #fff;
+    vertical-align: top;
+    border: 1px solid #ccc;
+}
+
+.page .main-contents blockquote {
+    position: relative;
+    font-size: 13px;
+    margin: 40px auto 45px;
+    padding: 55px 23px;
+    width: 90%;
+    color: #666;
+    line-height: 1.7;
+    background-color: #f5f5f5;
+}
+
+.page .main-contents blockquote:before,
+.page .main-contents blockquote:after {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 38px;
+	height: 29px;
+	background: no-repeat center top;
+}
+
+.page .main-contents blockquote:before {
+    background-image: url(../img/icon02.png);
+    left: 20px;
+    top: 15px;
+}
+
+.page .main-contents blockquote:after {
+    background-image: url(../img/icon03.png);
+    right: 20px;
+    bottom: 15px;
+}
+
+
